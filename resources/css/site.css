@@ -56,6 +56,11 @@
         background-color: rgba(41, 43, 44, 0.5);
     }
 
+    .skill-badge:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
     #hero-container {
         margin-top: 10%;
         margin-bottom: 10%;
