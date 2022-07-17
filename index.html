@@ -27,8 +27,59 @@ title: Jon Knight | Home
             </div>
         </div>
     </div>
-    <div class="row bg-dark py-5 px-sm-5">
-        <div class="col-md-8 offset-md-2 bg-light text-dark align-center">
+
+    <div class="row bg-dark px-sm-5">
+        <div class="col-md-8 offset-md-2 py-5 text-light align-center text-center">
+            <h1>Recent Activity</h1>
+            <div class="row bg-dark px-sm-5">
+                <div class="col-md-6 text-light">
+                    <h2>GitHub Projects</h2>
+                    <div class="row bg-dark py-2 px-sm-5">
+                        <object class="github-card" type="image/svg+xml" data="https://gh-card.dev/repos/jmknight2/EasyRedirSDK.svg?fullname=&link_target=_blank"></object>
+                    </div>
+                    <div class="row bg-dark py-2 px-sm-5">
+                        <object class="github-card" type="image/svg+xml" data="https://gh-card.dev/repos/jmknight2/jonknight.dev.svg?link_target=_blank"></object>
+                    </div>
+                    <div class="row bg-dark py-2 px-sm-5">
+                        <object class="github-card" type="image/svg+xml" data="https://gh-card.dev/repos/jmknight2/Misc-Powershell.svg?fullname=&link_target=_blank"></object>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Blog Posts</h2>
+
+                        {% for post in site.posts %}
+                        <div class="row bg-dark py-2">
+                            <div class="col-12">
+                                <div class="card text-start text-dark">
+                                    <div class="card-header py-1 px-2">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h5 class="card-title">
+                                                    <a class="text-decoration-none" href="{{ post.url }}">{{ post.title }}</a>
+                                                </h5>
+                                            </div>
+                                            <div class="col-6 text-end">
+                                                <p class="text-muted">{{ post.date | date: "%a, %b %d, %y" }}</p>
+                                            </div>
+                                        </div>
+                                    </div>                                                                        
+                                    
+                                    <div class="card-body py-0">
+                                        <p class="card-text">{{ post.excerpt | truncate: 195}} <a href="{{ post.url }}">Read More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row bg-dark px-sm-5">
+        <div class="intro-container col-md-8 offset-md-2 py-5 text-light align-center">
             <h1 id="heading-intro" class="text-center">Introduction</h1>
             <p>I believe in creating efficient reusable code that can go onto serve many future projects and stand the test of time. I have experience working remote and I'm comfortable working on solo projects as well as communicating with a team. I graduated Summa Cum Laude from Pellissippi State with an A.A.S. in Computer Programming in 2018. I then earned my Bachelor of Science in Software Development from WGU in 2020.</p>                
         </div>
@@ -43,15 +94,51 @@ title: Jon Knight | Home
                     <h3 class="text-center">Systems/Cloud Engineering</h3>
                     <ul class="list-group list-group-horizontal">
                         <li class="d-flex justify-content-center p-2">
-                            <img class="skill-badge img-fluid rounded-circle" src="/assets/images/O365_Logo.png"/>
+                            <img class="skill-badge img-fluid rounded-circle" src="/assets/images/O365_Logo.png" onclick="toggleDetailCard('detail-cloud-1')"/>
                         </li>
                         <li class="d-flex justify-content-center p-2">
-                            <img class="skill-badge img-fluid rounded-circle" src="/assets/images/Azure_Logo.png"/>
+                            <img class="skill-badge img-fluid rounded-circle" src="/assets/images/Azure_Logo.png" onclick="toggleDetailCard('detail-cloud-2')"/>
                         </li>
                         <li class="d-flex justify-content-center p-2">
-                            <img class="skill-badge img-fluid rounded-circle" src="/assets/images/AWS_Logo.png"/>
+                            <img class="skill-badge img-fluid rounded-circle" src="/assets/images/AWS_Logo.png" onclick="toggleDetailCard('detail-cloud-3')"/>
                         </li>
                     </ul>
+
+                    <div id="detail-cloud-1" class="card detail-card" style="color: black; display: none;">
+                        <div class="card-header">
+                            <h5 class="card-title">Office 365</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">I have over 4 years of experience writing very complex PowerShell for enterprises. I've done everything from scripting a full email migration, to building user interfaces, and building wrappers for dozens of APIs, all in PowerShell. I was also luck enough to be invited to give a presentation on PowerShell at the East TN chapter of LOPSA.</p>
+                            <hr/>
+                            <p><b>Script Examples:</b> <a target="_blank" href="https://github.com/jmknight2/Misc-PowerShell">https://github.com/jmknight2/Misc-PowerShell</a></p>
+                            <p><b>PowerShell Presentation:</b> <a target="_blank" href="https://youtu.be/AIFTX7rnFUg">https://youtu.be/AIFTX7rnFUg</a></p>
+                        </div>
+                    </div>
+
+                    <div id="detail-cloud-2" class="card detail-card" style="color: black; display: none;">
+                        <div class="card-header">
+                            <h5 class="card-title">Azure</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">I have over 4 years of experience writing very complex PowerShell for enterprises. I've done everything from scripting a full email migration, to building user interfaces, and building wrappers for dozens of APIs, all in PowerShell. I was also luck enough to be invited to give a presentation on PowerShell at the East TN chapter of LOPSA.</p>
+                            <hr/>
+                            <p><b>Script Examples:</b> <a target="_blank" href="https://github.com/jmknight2/Misc-PowerShell">https://github.com/jmknight2/Misc-PowerShell</a></p>
+                            <p><b>PowerShell Presentation:</b> <a target="_blank" href="https://youtu.be/AIFTX7rnFUg">https://youtu.be/AIFTX7rnFUg</a></p>
+                        </div>
+                    </div>
+
+                    <div id="detail-cloud-3" class="card detail-card" style="color: black; display: none;">
+                        <div class="card-header">
+                            <h5 class="card-title">AWS</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">I have over 4 years of experience writing very complex PowerShell for enterprises. I've done everything from scripting a full email migration, to building user interfaces, and building wrappers for dozens of APIs, all in PowerShell. I was also luck enough to be invited to give a presentation on PowerShell at the East TN chapter of LOPSA.</p>
+                            <hr/>
+                            <p><b>Script Examples:</b> <a target="_blank" href="https://github.com/jmknight2/Misc-PowerShell">https://github.com/jmknight2/Misc-PowerShell</a></p>
+                            <p><b>PowerShell Presentation:</b> <a target="_blank" href="https://youtu.be/AIFTX7rnFUg">https://youtu.be/AIFTX7rnFUg</a></p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-lg-4 p-3">
@@ -69,18 +156,25 @@ title: Jon Knight | Home
                     </ul>
 
                     <div id="detail-dev-1" class="card detail-card" style="color: black; display: none;">
-                        <div class="card-body">
+                        <div class="card-header">
                             <h5 class="card-title">PowerShell</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">I have over 4 years of experience writing very complex PowerShell for enterprises. I've done everything from scripting a full email migration, to building user interfaces, and building wrappers for dozens of APIs, all in PowerShell. I was also luck enough to be invited to give a presentation on PowerShell at the East TN chapter of LOPSA.</p>
                             <hr/>
-                            <p class="card-text">I have over 4 years of experience writing very complex PowerShell for enterprises. I've done everything from scripting a full email migration, to building user interfaces, and building wrappers for dozens of APIs, all in PowerShell.</p>
-                            <hr/>
-                            <p><b>Resources:</b> <a target="_blank" href="https://github.com/jmknight2/Misc-PowerShell">Misc. PowerShell</a></p>
+                            <p><b>Script Examples:</b> <a target="_blank" href="https://github.com/jmknight2/Misc-PowerShell">https://github.com/jmknight2/Misc-PowerShell</a></p>
+                            <p><b>PowerShell Presentation:</b> <a target="_blank" href="https://youtu.be/AIFTX7rnFUg">https://youtu.be/AIFTX7rnFUg</a></p>
                         </div>
                     </div>
 
                     <div id="detail-dev-2" class="card detail-card" style="color: black; display: none;">
+                        <div class="card-header">
+                            <h5 class="card-title">C# and .NET</h5>
+                        </div>
                         <div class="card-body">
-                            This is some text about .NET.
+                            <p class="card-text">I have leveraged .NET to design several web apps. These web apps accomplished several goals including: building a custom front-end for managing Active Directory users, managing a SaaS VOIP system, and custom interface for Route53 DNS, which implented AAD RBAC via SSO. I have also bulit some custom .NET libraries, such as the EasyRedir SDK linked below. </p>
+                            <hr/>
+                            <p><b>EasyRedir SDK:</b> <a target="_blank" href="https://github.com/jmknight2/EasyRedirSDK">https://github.com/jmknight2/EasyRedirSDK</a></p>
                         </div>
                     </div>
 

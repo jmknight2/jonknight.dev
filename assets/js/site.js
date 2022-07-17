@@ -4,8 +4,17 @@ function toggleDetailCard (cardId) {
 
     // Hide all cards that aren't the current card.
     if ($(`#${cardId}`).css("display") === "none") {
+        $(`#${cardId} .card-body .card-text`).addClass('text-light');
+        $(`#${cardId} .card-body .card-text`).removeClass('text-dark');
         $(`#${cardId}`).show(500);
+        
+        setTimeout(() => { 
+            $(`#${cardId} .card-body .card-text`).addClass('text-dark'); 
+            $(`#${cardId} .card-body .card-text`).removeClass('text-light');
+        }, 500);
     } else {
+        $(`#${cardId} .card-body .card-text`).addClass('text-light');
+        $(`#${cardId} .card-body .card-text`).removeClass('text-dark');
         $(`#${cardId}`).hide(500);
     }
 }
