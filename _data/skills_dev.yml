@@ -1,0 +1,30 @@
+- title: PowerShell
+  desc: "I have over 4 years of experience writing very complex PowerShell for enterprises. I've done everything from scripting a full email migration, to building user interfaces, and building wrappers for dozens of APIs, all in PowerShell. I was also lucky enough to be invited to give a presentation on PowerShell at the East TN chapter of LOPSA."
+  img:  "/assets/images/PS_Logo.png"
+  index: 1
+  links:
+    - title: "Script Examples"
+      href: "https://github.com/jmknight2/Misc-PowerShell"
+    - title: "PowerShell Presentation"
+      href: "https://youtu.be/AIFTX7rnFUg"
+
+- title: C# and .NET
+  desc: "I have leveraged .NET to design several web apps. These web apps accomplished several goals including: building a custom front-end for managing Active Directory users, managing a SaaS VOIP system, and custom interface for Route53 DNS, which implented AAD RBAC via SSO. I have also bulit some custom .NET libraries, such as the EasyRedir SDK linked below."
+  img: "/assets/images/CSharp_Logo.png"
+  index: 2
+  links:
+    - title: "EasyRedir SDK"
+      href: "https://github.com/jmknight2/EasyRedirSDK"
+
+- title: Java
+  desc: "While my experience with Java is largely academic, I am very familiar with the language and I've built several worthwhile applications. As a course project, I built a local bookstore application utilizing JavaFX as a front-end for the Google Books API."
+  img: "/assets/images/Java_Logo.png"
+  index: 3
+
+- title: Web Design (HTML, CSS, JavaScript)
+  desc: "I've built several websites both in my career, and during my education. One great example of my experience is this very website. I designed the layout, styling, logic myself. I utilized Jekyll the backbone for the blog portion of the website, and Boostrap v5.0 provides the layout."
+  img: "/assets/images/Web_Logo.png"
+  index: 4
+  links:
+    - title: "JonKnight.dev Repo"
+      href: "https://github.com/jmknight2/jonknight.dev"

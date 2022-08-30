@@ -1,0 +1,19 @@
+- title: Office 365
+  desc: "I have over 4 years of experience administering and architecting an enterprise-level Office 365 environment of 1000+ users. I also consolidated over a dozen email tenants into our corporate email system."
+  img:  "/assets/images/O365_Logo.png"
+  index: 1
+
+- title: Azure
+  desc: "I've spent over 4 years working in an enterprise-level Azure tenant. I've worked extensively with Azure Automation to automate and orchastrate several dozen business processes. I've configured and deployed several Azure VMs, and even helped design a custom JIT Bastion VM deployment system. I've also integrated with several Azure services including Key Vault, Azure Storage/Tables, and Azure Cosmos DB."
+  img: "/assets/images/Azure_Logo.png"
+  index: 2
+
+- title: AWS
+  desc: "I have worked extensively with AWS Route53, including integrating several key processes/programs, utilizing the AWS SDK for .NET. I have a solid understanding of AWS IAM roles, and have configured several targeted policies. I've also worked with other AWS services such as: Polly, Transfer Family, and S3."
+  img: "/assets/images/AWS_Logo.png"
+  index: 3
+
+- title: ServiceNow
+  desc: "I assisted in the deployment and planning of a new ServiceNow instance, which included redsigning our change management process, configuring incident management, and maturing our ITSM process. I've also built several custom integrations for ServiceNow, allowing it to interact with external services."
+  img: "/assets/images/SN_Logo.png"
+  index: 4

@@ -1,7 +1,15 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+<!-- <div class="row post-hero-img" style="background-image:url('/assets/images/post_hero_images/{{ page.hero_img }}'); background-position: center;"></div> -->
+<header class="masthead" style="background-image: url('/assets/images/post_hero_images/{{ page.hero_img }}')">
+</header>
+<div class="row bg-dark py-3 mx-0">
+    <div class="col-lg-8 offset-lg-2 text-light">
+        <h1>{{ page.title }}</h1>
+        <small>{{ page.date | date_to_string }} - {{ page.author }}</small>
+        <hr/>
 
-{{ content }}
+        {{ content }}
+    </div>
+</div>

@@ -1,8 +1,6 @@
 - name: Intro
-  link: "#heading-intro"
+  link: "/#heading-intro"
 - name: Skills
-  link: "#heading-skills"
+  link: "/#heading-skills"
 - name: Blog
   link: /blog.html
-- name: Contact
-  link: /contact.html

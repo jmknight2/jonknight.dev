@@ -1,3 +1,13 @@
+(function($) {
+    $.fn.hasScrollBar = function() {
+        return this.get(0).scrollHeight > this.height();
+    }
+})(jQuery);
+
+if($('body').hasScrollBar()) {
+    $('#navbar-container').css("background-color",'rgba(21, 22, 22, 1)');
+}
+
 function toggleDetailCard (cardId) {
     // Hide all cards that aren't the current card. 
     $(`.detail-card:not(#${cardId})`).hide(500);

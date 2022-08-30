@@ -1,0 +1,35 @@
+---
+layout: default
+title: Jon Knight | Blog
+---
+
+<header class="masthead" style="background-image: url('/assets/images/blog_hero.jpg');">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading text-center text-light">
+                    <h1 style="text-shadow: 3px 3px 5px #000000;">Jon Knight's IT Blog</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="row bg-dark py-3 mx-0">
+    <div class="col-lg-8 offset-lg-2 text-light">
+
+        {% for post in site.posts %}
+            <div class="row bg-dark text-light">
+                <div class="col-12">
+                    <h2><a class="text-decoration-none text-light" href="{{ post.url }}">{{ post.title }}</a></a></h2>
+                    <h5 class="card-text my-0">{{ post.excerpt | truncate: 330}}</h5>
+                    <p><a href="{{ post.url }}">Read More</a></p>
+                    <h6><i>Posted By <b>{{ post.author }}</b> on <b>{{ post.date | date: "%a, %b %d, %y" }}</b></i></h6>
+                </div>
+            </div>
+        {% endfor %}
+
+        <hr/>
+
+
+    </div>
+</div>

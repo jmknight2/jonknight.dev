@@ -1,0 +1,14 @@
+- title: REST APIs
+  desc: "I've interacted with dozens of APIs in my career, so I have a very solid understanding how APIs work and how to use them. I've written complex wrappers for various APIs, and even built a few smaller APIs of my own to accomplish management tasks."
+  img:  "/assets/images/RestAPI.png"
+  index: 1
+
+- title: DNS
+  desc: "As an intern, my first project when joining Ministry Brands was to automate the migration of over 100 DNS hosted zones between providers. While it was a trial by fire of sorts, I learned a lot about DNS and I've continued to grow that knowledge as I've progressed."
+  img: "/assets/images/DNS_Logo.png"
+  index: 2
+
+- title: SAML SSO
+  desc: "As the admin of an organization that heavily utilizes Azure Active Directory for SSO, I've the opportunity to learn a lot about SAML and it's various features. I've configured and maintained 30+ SAML applications, each with their own unique features. I've also integrated SAML into my own internal applications, utilizing true claims-based RBAC."
+  img: "/assets/images/SAML_Logo.png"
+  index: 3
