@@ -33,12 +33,14 @@ title: Jon Knight | Home
             <div class="col-lg-6 text-light px-4">
                 <h2>GitHub Projects</h2>
                 {% for item in site.data.repos %}
-                    <div class="row bg-dark py-2 px-sm-5">
-                        <div class="github-card text-start text-dark p-2 bg-light">
-                            <h5><i class="fab fa-git-square"></i> <a class="text-decoration-none" href="{{ item.link }}" target="_blank"> {{ item.title }}</a></h5>
-                            <small> {{ item.desc }} </small>
-                            <br/>
-                            <small><i class="fas fa-circle text-{{ item.color }}"></i> {{ item.lang }} <i class="fas fa-star"> </i> 0</small>
+                    <div class="col-12">
+                        <div class="bg-dark py-2 px-sm-5">
+                            <div class="col-12 github-card text-start text-dark p-2 bg-light">
+                                <h5><i class="fab fa-git-square"></i> <a class="text-decoration-none" href="{{ item.link }}" target="_blank"> {{ item.title }}</a></h5>
+                                <small> {{ item.desc }} </small>
+                                <br/>
+                                <small><i class="fas fa-circle text-{{ item.color }}"></i> {{ item.lang }} <i class="fas fa-star"> </i> 0</small>
+                            </div>
                         </div>
                     </div>
                 {% endfor %}
@@ -81,6 +83,20 @@ title: Jon Knight | Home
     <div class="intro-container col-md-8 offset-md-2 py-5 text-light align-center">
         <h1 id="heading-intro" class="text-center">Introduction</h1>
         <p>I believe in creating efficient reusable code that can go onto serve many future projects and stand the test of time. I have experience working remote and I'm comfortable working on solo projects as well as communicating with a team. I graduated Summa Cum Laude from Pellissippi State with an A.A.S. in Computer Programming in 2018. I then earned my Bachelor of Science in Software Development from WGU in 2020.</p>                
+    </div>
+</div>
+
+<div class="row bg-dark py-5 px-sm-5 m-0">
+    <div class="col-md-8 offset-md-2 text-light align-center">
+        <h1 id="heading-skills" class="text-center">Professional Certifications</h1>
+        <p style="text-align: center;">These are the current cretificates that I've earned, relevant to IT & Development.</p>
+        <hr/>
+        <div class="row">
+            <div class="col-lg-4 p-3">
+                <h3 class="text-center">Microsoft</h3>
+                <a target="_blank" href="https://www.credly.com/badges/1f9052c7-c94e-474a-b831-badbc937d773/public_url"><img class="img-fluid" src="./assets/images/certifications/microsoft-365-certified-fundamentals.png"/></a>
+            </div>
+        </div>
     </div>
 </div>
 
