@@ -36,6 +36,48 @@
     }
 }
 
+.detail-card .card-body {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.github-card {
+    border-radius: 4px;
+}
+
+.intro-container {
+    border-radius: 0px 25px 0px 25px;
+    background-color: rgb(28, 46, 66);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.post-hero-img {
+    padding: 0px;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.skill-badge {
+    max-width: 108px;
+}
+
+header.masthead {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-top: calc(8rem + 100px);
+    padding-bottom: 8rem;
+    background: no-repeat center center;
+    background-color: rgba(41, 43, 44, 0.5);
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.post-container > p > img {
+    max-width: 100%;
+    height: auto;
+}
+
 @media only screen and (min-width: 601px) {
     .nav-link {
         color: rgb(45, 115, 155);
@@ -54,6 +96,11 @@
 
     #navbar-container {
         background-color: rgba(41, 43, 44, 0.5);
+    }
+
+    .skill-badge:hover {
+        transform: scale(1.1);
+        cursor: pointer;
     }
 
     #hero-container {

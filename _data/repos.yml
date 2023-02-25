@@ -1,0 +1,20 @@
+- title: EasyRedirSDK
+  link: https://github.com/jmknight2/EasyRedirSDK
+  desc: This library is meant to act as an SDK for the EasyRedir API. 
+        I've fully mapped all endpoints as methods in the library, 
+        making them easier to use and easier to read.
+  lang: "C#"
+  color: success
+  stars: 3
+- title: jonknight.dev
+  link: https://github.com/jmknight2/jonknight.dev
+  desc: 
+  lang: JavaScript
+  color: warning
+  stars: 0
+- title: Misc-Powershell
+  link: https://github.com/jmknight2/Misc-Powershell
+  desc: Various neat discoveries or PowerShell related odds and ends.
+  lang: PowerShell
+  color: primary
+  stars: 2
